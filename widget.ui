@@ -16,11 +16,11 @@
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QChartView" name="chartView">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>456</height>
-      </size>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
      </property>
      <property name="resizeAnchor">
       <enum>QGraphicsView::AnchorUnderMouse</enum>

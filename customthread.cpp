@@ -13,6 +13,8 @@ CustomThread::~CustomThread()
 {
     m_mutex.lock();
     m_abort = true;
+    if (m_pause)
+        m_pauseCond.wakeAll();
     m_mutex.unlock();
 
     wait();

@@ -70,8 +70,6 @@ Widget::Widget(QWidget *parent) :
 Widget::~Widget()
 {
     delete ui;
-    m_worker.quit();
-    m_worker.wait();
 }
 
 void Widget::addData(QPointF xy)
